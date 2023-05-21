@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f1f1f1;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	margin: 100px auto;
+	max-width: 400px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #ccc;
+	padding: 20px;
+}
+
+.img-container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+input[type=text], input[type=password] {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f1f1f1;
+}
+
+.login-btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.login-btn:hover {
+	background-color: #3e8e41;
+}
+
+    </style>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="img-container">
+			<img src="https://www.shutterstock.com/image-illustration/electronic-voting-machine-evm-male-260nw-1948119313.jpg">
+		</div>
+		<form class="login-form" action="UserLoginPage.jsp" method="post">
+			<label for="username">Email ID:</label>
+			<input type="text" id="username" name="username" placeholder="Enter your Email ID">
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" placeholder="Enter your password">
+
+			<button type="submit" class="login-btn">Login</button>
+		</form>
+	</div>
+</body>
+</html>
